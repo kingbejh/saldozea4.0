@@ -3,38 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#6366f1">
-    <title>SaldoZea by ZeaProperty • Finance Tracker v4.0</title>
+    <meta name="theme-color" content="#a855f7">
+    <title>SaldoZea v4.0 • LED Moving Sign</title>
     
-    <!-- PWA -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="icon-192.png" type="image/png">
-    <link rel="apple-touch-icon" href="icon-192.png">
-    
-    <!-- Styles -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- Module Entry Point -->
+    <!-- Firebase & Modules -->
     <script type="module" src="js/main.js" defer></script>
 </head>
 <body class="dark">
-    <!-- Root container - semua konten akan dirender via JS -->
-    <div id="app"></div>
+    <div id="app" class="min-h-screen bg-[#0f0f17]"></div>
 
-    <!-- Toast Notification Container -->
+    <!-- Toast Container -->
     <div id="toast-container" class="fixed bottom-4 right-4 z-[9999] flex flex-col gap-2"></div>
 
-    <!-- Loading overlay (untuk transisi halaman) -->
-    <div id="loading-overlay" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[99999]">
-        <div class="text-white text-center">
-            <div class="w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-3"></div>
-            <p class="text-sm tracking-widest">Loading SaldoZea v4.0...</p>
-        </div>
-    </div>
-
     <script>
-        // Fallback safety
-        console.log('%c🚀 SaldoZea v4.0 initialized by Grok', 'color:#a855f7; font-size:13px; font-weight:bold');
+        console.log('%c🚀 SaldoZea v4.0 - Loading...', 'color:#a855f7; font-weight:bold');
     </script>
 </body>
 </html>
