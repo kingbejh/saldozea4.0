@@ -1,33 +1,10 @@
-// js/main.js
-// Entry Point SaldoZea v4.0
+// js/main.js - SUPER SIMPLE TEST
+console.log('%c🚀 SaldoZea v4.0 - Simple Test', 'color:#a855f7; font-size:16px');
 
-import { initLedSign } from './ui/led-sign.js';
-
-console.log('%c🚀 SaldoZea v4.0 started by Grok', 'color:#22d3ee; font-size:15px; font-weight:bold');
-
-async function initializeApp() {
-    const app = document.getElementById('app');
-    
-    // Buat struktur dasar
-    app.innerHTML = `
-        <div class="header flex items-center justify-between px-4 py-5 text-white">
-            <div class="flex items-center gap-3">
-                <span class="text-3xl">🪧</span>
-                <div>
-                    <h1 class="text-2xl font-bold tracking-widest">SALDOZEA</h1>
-                    <p class="text-xs opacity-75">v4.0 • LED Moving Sign Editor</p>
-                </div>
-            </div>
-            <div class="text-sm bg-white/10 px-4 py-1 rounded-3xl">SUPREME KINGBEJH</div>
-        </div>
-        
-        <div id="main-content" class="p-4"></div>
-    `;
-
-    // Jalankan LED Sign Editor
-    initLedSign();
-
-    console.log('%c✅ SaldoZea v4.0 LED Module Ready!', 'color:#22d3ee; font-weight:bold');
-}
-
-initializeApp();
+document.getElementById('app').innerHTML = `
+    <div style="min-height:100vh; background:#0f0f17; color:white; display:flex; align-items:center; justify-content:center; flex-direction:column; padding:20px; text-align:center;">
+        <h1 style="font-size:3rem; margin-bottom:1rem;">🪧 SALDOZEA v4.0</h1>
+        <p style="font-size:1.5rem; color:#a855f7;">TEST RENDERING BERHASIL ✅</p>
+        <p style="margin-top:2rem; opacity:0.7;">Kalau kamu melihat ini, berarti JS sudah jalan.</p>
+    </div>
+`;
